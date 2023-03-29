@@ -1,2 +1,9 @@
-web: bin/rails server -p 3000
-js: yarn build --watch
+#!/usr/bin/env bash
+
+if ! foreman version &> /dev/null
+then
+  echo "Installing foreman..."
+  gem install foreman
+fi
+
+foreman start -f Procfile.dev "$@"
