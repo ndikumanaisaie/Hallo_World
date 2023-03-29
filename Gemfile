@@ -29,10 +29,6 @@ gem 'foreman', '~> 0.87.2'
 # Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 
-gem 'webpacker'
-
-gem 'react-rails'
-
 # Env v2
 gem 'dotenv-rails', groups: %i[development test]
 
