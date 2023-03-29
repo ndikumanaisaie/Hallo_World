@@ -7,7 +7,6 @@ const http = axios.create({ baseURL: BASE_URL });
 export const getGreetings = createAsyncThunk('greeting/getGreetings', async () => {
   try {
     const response = await http.get();
-    console.log(response);
     return response.data;
   } catch (error) {
     return error;
@@ -18,7 +17,7 @@ const greetingSlice = createSlice({
   name: 'greeting',
   initialState: {
     isLoading: 'idle' || 'loading' || 'succeeded' || 'failed',
-   greetings: [],
+    greetings: [],
   },
 
   extraReducers(builder) {
