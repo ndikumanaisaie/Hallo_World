@@ -24,8 +24,14 @@ gem 'jsbundling-rails'
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
 
+# foreman
+gem 'foreman', '~> 0.87.2'
 # Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+gem 'webpacker'
+
+gem 'react-rails'
 
 # Env v2
 gem 'dotenv-rails', groups: %i[development test]
